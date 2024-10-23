@@ -1,9 +1,12 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showString("Dilan")
-})
-input.onButtonPressed(Button.AB, function () {
-    basic.showString("Dilan y Kevin")
-})
 input.onButtonPressed(Button.B, function () {
-    basic.showString("Kevin")
+    basic.showString("" + (!(true)))
+    basic.showString("" + (Math.randomBoolean()))
+    if (true) {
+        basic.showIcon(IconNames.No)
+    } else {
+        basic.showIcon(IconNames.Yes)
+    }
+})
+input.onGesture(Gesture.LogoDown, function () {
+	
 })
